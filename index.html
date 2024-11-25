@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXSUS|Country Phone Number Validator</title>
+    <link rel="stylesheet" href="/Country-Phone-Number-Validator/style.css">
+    <link rel="shortcut icon" href="/Country-Phone-Number-Validator/NEXSUS.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Phone Number Validator</h1>
+        <select name="country" id="country-select">
+            <option value="us">United States</option>
+            <option value="ng" selected>Nigeria</option>
+            <option value="uk">United Kingdom</option>
+            <option value="jp">Japan</option>
+            <option value="cn">China</option>
+            <!-- Add more -->
+        </select>
+        <div class="input">
+            <input type="text" id="user-input" placeholder="Enter a phone number">
+            <div class="btns">
+                <button id="check-btn">Check</button>
+                <button id="clear-btn">Clear</button>
+            </div>
+            <p id="results-div"></p>
+        </div>
+    </div>
+
+    <button id="toggle-mode">Light/Dark Mode</button>
+    <script src="/Country-Phone-Number-Validator/main.js"></script>
+</body>
+
+</html>

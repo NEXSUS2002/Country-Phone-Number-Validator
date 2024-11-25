@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #2190FF;
+    --container-bg-color: #F8F8F8;
+    --container-shadow-color: 0 0 10px #0C1016;
+    --h1-color: linear-gradient(90deg, #0C1016, #0EFEB6);
+    --input-border-color: #0C1016;
+    --hover-input-border-color: #2190FF;
+    --btn-color: #2190FF;
+    --btn-font-color: #F8F8F8;
+    --hover-btn-color: #0EFEB6;
+    --hover-btn-font-color: #2190FF;
+    --clear-btn-color: #FE9A77;
+    --clear-btn-font-color: #F8F8F8;
+    --hover-clear-btn-color: #FF2121;
+    --hover-clear-btn-font-color: #FE9A77;
+    --paragraph-result-text-color: #0C1016;
+    --toggle-btn-color: #F8F8F8;
+    --hover-toggle-btn-color: #0C1016;
+    --toggle-font-btn-color: #0C1016;
+    --hover-toggle-font-btn-color: #F8F8F8;
+}
+
+body.dark {
+    --body-bg-color: #0C1016;
+    --container-bg-color: #3D4045;
+    --container-shadow-color: 0 0 10px #2190FF;
+    --h1-color: linear-gradient(45deg, #FE9A77, #2190FF);
+    --input-border-color: #F8F8F8;
+    --hover-input-border-color: #FE9A77;
+    --btn-color: #2190FF;
+    --btn-font-color: #F8F8F8;
+    --hover-btn-color: #0EFEB6;
+    --hover-btn-font-color: #2190FF;
+    --clear-btn-color: #FE9A77;
+    --clear-btn-font-color: #F8F8F8;
+    --hover-clear-btn-color: #FF2121;
+    --hover-clear-btn-font-color: #FE9A77;
+    --paragraph-result-text-color: #F8F8F8;
+    --toggle-btn-color: #F8F8F8;
+    --hover-toggle-btn-color: #0C1016;
+    --toggle-font-btn-color: #0C1016;
+    --hover-toggle-font-btn-color: #F8F8F8;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--body-bg-color);
+    padding: 0 20px;
+}
+
+.container {
+    text-align: center;
+    background-color: var(--container-bg-color);
+    box-shadow: var(--container-shadow-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: clamp(30px, 4vw + 10px, 40px);
+    font-weight: 750;
+    margin-bottom: 20px;
+    background: var(--h1-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+select,
+input,
+button {
+    padding: 20px;
+    margin: 5px 20px;
+    font-size: clamp(16px, 4vw + 16px, 20px);
+    font-family: "Lato";
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+input {
+    border: 3px solid var(--input-border-color);
+    transition: border-color 0.5s ease-in-out;
+}
+
+input:hover {
+    border-color: var(--hover-input-border-color);
+}
+
+button {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#check-btn {
+    background-color: var(--btn-color);
+    color: var(--btn-font-color);
+}
+
+#check-btn:hover {
+    background-color: var(--hover-btn-color);
+    color: var(--hover-btn-font-color);
+    transform: scale(1.1);
+}
+
+#clear-btn {
+    background-color: var(--clear-btn-color);
+    color: var(--clear-btn-font-color);
+}
+
+#clear-btn:hover {
+    background-color: var(--hover-clear-btn-color);
+    color: var(--hover-clear-btn-font-color);
+    transform: scale(1.1);
+}
+
+#results-div {
+    font-size: clamp(16px, 4vw + 16px, 20px);
+    font-weight: 900;
+    padding-top: 20px;
+    color: var(--paragraph-result-text-color);
+}
+
+#toggle-mode {
+    background-color: var(--toggle-btn-color);
+    font-family: "Lato";
+    font-weight: 900;
+    color: var(--toggle-font-btn-color);
+    transition: all .5s ease-in-out;
+}
+
+#toggle-mode:hover {
+    background-color: var(--hover-toggle-btn-color);
+    color: var(--hover-toggle-font-btn-color);
+}
